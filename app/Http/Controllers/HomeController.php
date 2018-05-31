@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Jobs\SendWelcomeEmail;
 use Illuminate\Http\Request;
 use Log;
 use Mail;
