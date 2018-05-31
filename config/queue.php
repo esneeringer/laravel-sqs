@@ -50,11 +50,11 @@ return [
 
         'sqs' => [
             'driver' => 'sqs',
-            'key' => env('SQS_KEY', 'AKIAIDYHHX5547UJ5CZA'),
-            'secret' => env('SQS_SECRET', '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'),
-            'prefix' => env('SQS_PREFIX', 'https://sqs.us-east-2.amazonaws.com/694948739437'),
-            'queue' => env('SQS_QUEUE', 'laravel-email-test'),
-            'region' => env('SQS_REGION', 'us-east-2'),
+            'key' => env('SQS_KEY'),
+            'secret' => env('SQS_SECRET'),
+            'prefix' => env('SQS_PREFIX'),
+            'queue' => env('SQS_QUEUE'),
+            'region' => env('SQS_REGION'),
         ],
 
         'redis' => [

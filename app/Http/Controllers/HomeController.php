@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Jobs\SendWelcomeEmail;
+
 use Illuminate\Http\Request;
 use Log;
 use Mail;
@@ -18,7 +18,7 @@ class HomeController extends Controller
     public function send()
     {
         Log::info("Request Cycle with Queues Begins");
-        $this->dispatch((new SendWelcomeEmail())->delay(60 * 1));
+        $this->dispatch(new SendWelcomeEmail());
         Log::info("Request Cycle with Queues Ends");
     }
 }
